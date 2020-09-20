@@ -1,0 +1,10 @@
+.item {
+    color: darkorange;
+}
+
+.item img {
+    width: 50px;
+    border-radius: 50%;
+    height: 50px;
+    border: 1px solid wheat;
+}
