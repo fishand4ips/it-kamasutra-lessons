@@ -5,9 +5,9 @@ import store from './redux/store-redux'
 import ReactDOM from "react-dom";
 import {BrowserRouter} from "react-router-dom";
 import App from "./App";
-import {Provider} from "./StoreContext";
+import {Provider} from "react-redux";
 
-let rerenderEntireTree = (state) => {
+let rerenderEntireTree = () => {
     ReactDOM.render(
         <React.StrictMode>
             <BrowserRouter>
