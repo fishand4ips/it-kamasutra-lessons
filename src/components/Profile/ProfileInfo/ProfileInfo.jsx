@@ -15,8 +15,8 @@ const ProfileInfo = (props) => {
             {/*        alt='img'/>*/}
             {/*</div>*/}
             <div className={s.descriptionBlock}>
-                <img src={props.profile.photos.large}/>
-                <img src={props.profile.photos.small}/>
+                <img src={props.profile.photos.large} alt="large-icon"/>
+                <img src={props.profile.photos.small} alt="small-icon"/>
                 <ProfileStatus status={props.status} updateStatus={props.updateStatus}/>
             </div>
         </div>

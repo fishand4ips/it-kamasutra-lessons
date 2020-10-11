@@ -6,3 +6,9 @@
 .formControl.error span {
     color: wheat;
 }
+
+.formSummaryError {
+    border: solid wheat 2px;
+    padding: 5px;
+    color: aqua;
+}
