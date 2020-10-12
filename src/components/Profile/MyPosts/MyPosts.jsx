@@ -8,8 +8,8 @@ import {TextArea} from "../../../utils/FormsControls/FormsControls";
 const maxLength10 = maxLengthCreator(10);
 const minLength2 = minLengthCreator(2);
 
-const MyPosts = (props) => {
-    let postsElements = props.posts.map(p => <Post
+const MyPosts = React.memo(props => {
+    let postsElements = [...props.posts].reverse().map(p => <Post
         message={p.message}
         likeCount={p.likeCount}/>);
 
@@ -25,8 +25,8 @@ const MyPosts = (props) => {
                 {postsElements}
             </div>
         </div>
-    );
-};
+    )
+});
 
 let AddNewPostForm = (props) => {
     return (
