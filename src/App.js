@@ -35,7 +35,6 @@ class App extends React.Component {
                            render={withSuspense(ProfileContainer)}/>
                     <Route path='/dialogs'
                            render={withSuspense(DialogsContainer)}/>
-                    }}/>
                     <Route path='/users' render={() => <UsersContainer/>}/>
                     <Route path='/news' render={() => <News/>}/>
                     <Route path='/music' render={() => <Music/>}/>
